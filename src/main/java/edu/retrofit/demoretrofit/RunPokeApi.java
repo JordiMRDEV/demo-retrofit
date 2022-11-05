@@ -11,8 +11,6 @@ import java.io.IOException;
 
 @Configuration
 public class RunPokeApi implements ApplicationRunner {
-
-
     public void listBerries() throws IOException {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://pokeapi.co/api/v2/")

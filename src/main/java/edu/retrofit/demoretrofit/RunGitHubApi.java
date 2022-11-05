@@ -37,13 +37,6 @@ public class RunGitHubApi implements ApplicationRunner {
 
     }
 
-    public void listBerries() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://pokeapi.co/api/v2/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-    }
-
     @Override
     public void run(ApplicationArguments args) throws Exception {
         listRepos();
